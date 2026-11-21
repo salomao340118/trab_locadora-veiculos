@@ -1,0 +1,285 @@
+{
+  "marcas": [
+    {
+      "id": "1",
+      "nome": "Volkswagen"
+    },
+    {
+      "id": "2",
+      "nome": "Toyota"
+    },
+    {
+      "id": "3",
+      "nome": "Hyundai"
+    },
+    {
+      "id": "4",
+      "nome": "BMW"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Básico",
+      "valorLocacao": 110
+    },
+    {
+      "id": "2",
+      "nome": "Intermediário",
+      "valorLocacao": 180
+    },
+    {
+      "id": "3",
+      "nome": "Luxo",
+      "valorLocacao": 450
+    }
+  ],
+  "modelos": [
+    {
+      "id": "1",
+      "nome": "Gol",
+      "ano": 2023,
+      "marcaId": "1",
+      "categoriaId": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Corolla",
+      "ano": 2024,
+      "marcaId": "2",
+      "categoriaId": "2"
+    },
+    {
+      "id": "3",
+      "nome": "HB20",
+      "ano": 2024,
+      "marcaId": "3",
+      "categoriaId": "1"
+    },
+    {
+      "id": "4",
+      "nome": "X5",
+      "ano": 2025,
+      "marcaId": "4",
+      "categoriaId": "3"
+    }
+  ],
+  "veiculos": [
+    {
+      "id": "1",
+      "chassi": "9BWZZZ377VT004251",
+      "placa": "ABC1D23",
+      "anoFabricacao": 2023,
+      "cor": "Prata",
+      "kmRodado": 24500,
+      "modeloId": "1"
+    },
+    {
+      "id": "2",
+      "chassi": "9BRBL3HE6R0123456",
+      "placa": "DEF4G56",
+      "anoFabricacao": 2024,
+      "cor": "Preto",
+      "kmRodado": 11200,
+      "modeloId": "2"
+    },
+    {
+      "id": "3",
+      "chassi": "9BHBG51CA8P098765",
+      "placa": "GHI7J89",
+      "anoFabricacao": 2024,
+      "cor": "Branco",
+      "kmRodado": 8900,
+      "modeloId": "3"
+    },
+    {
+      "id": "4",
+      "chassi": "5UXCR6C08R9T55443",
+      "placa": "JKL0M12",
+      "anoFabricacao": 2025,
+      "cor": "Azul Escuro",
+      "kmRodado": 3200,
+      "modeloId": "4"
+    }
+  ],
+  "manutencoes": [
+    {
+      "id": "1",
+      "data": "2026-10-15",
+      "descricao": "Troca de óleo, filtros e alinhamento preventivo",
+      "valor": 620,
+      "veiculoId": "1"
+    },
+    {
+      "id": "2",
+      "data": "2027-01-15",
+      "descricao": "Revisão de freios e substituição de pastilhas dianteiras (agendada)",
+      "valor": 980,
+      "veiculoId": "3"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nome": "Lucas Andrade",
+      "cpf": "123.456.789-01",
+      "cnh": "01234567890",
+      "validadeCnh": "2028-09-30",
+      "telefone": "(62) 99123-4567",
+      "email": "lucas.andrade@email.com",
+      "endereco": "Rua 15, Qd. 20, Setor Bueno, Goiânia - GO"
+    },
+    {
+      "id": "2",
+      "nome": "Mariana Costa",
+      "cpf": "234.567.890-12",
+      "cnh": "10987654321",
+      "validadeCnh": "2027-05-15",
+      "telefone": "(62) 99876-5432",
+      "email": "mariana.costa@email.com",
+      "endereco": "Av. T-63, 450, Setor Bela Vista, Goiânia - GO"
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Eduardo (CNH Vencida)",
+      "cpf": "345.678.901-23",
+      "cnh": "55443322110",
+      "validadeCnh": "2025-01-10",
+      "telefone": "(62) 99555-1122",
+      "email": "carlos.eduardo@email.com",
+      "endereco": "Rua 85, 120, Setor Sul, Goiânia - GO"
+    }
+  ],
+  "locacoes": [
+    {
+      "id": "1",
+      "dataRetirada": "2026-11-19T09:00",
+      "dataDevolucaoPrevista": "2026-11-24T09:00",
+      "kmRetirada": 11200,
+      "valorTotal": 900,
+      "status": "ABERTA",
+      "clienteId": "1",
+      "veiculoId": "2"
+    },
+    {
+      "id": "2",
+      "dataRetirada": "2026-11-01T10:00",
+      "dataDevolucaoPrevista": "2026-11-04T10:00",
+      "dataDevolucaoReal": "2026-11-04T09:30",
+      "kmRetirada": 24000,
+      "kmDevolucao": 24500,
+      "valorTotal": 330,
+      "status": "FINALIZADA",
+      "clienteId": "2",
+      "veiculoId": "1"
+    },
+    {
+      "id": "3",
+      "dataRetirada": "2026-11-10T08:00",
+      "dataDevolucaoPrevista": "2026-11-12T08:00",
+      "kmRetirada": 3200,
+      "valorTotal": 900,
+      "status": "CANCELADA",
+      "clienteId": "1",
+      "veiculoId": "4"
+    }
+  ],
+  "contratos": [
+    {
+      "id": "1",
+      "numero": "CTR-2026-0001",
+      "dataEmissao": "2026-11-19",
+      "termos": "Locação sujeita à devolução nas mesmas condições mecânicas e de combustível, com cobertura prevista na categoria selecionada.",
+      "locacaoId": "1"
+    },
+    {
+      "id": "2",
+      "numero": "CTR-2026-0002",
+      "dataEmissao": "2026-11-01",
+      "termos": "Locação encerrada sem pendências contratuais.",
+      "locacaoId": "2"
+    },
+    {
+      "id": "3",
+      "numero": "CTR-2026-0003",
+      "dataEmissao": "2026-11-10",
+      "termos": "Locação cancelada antes da devolução; contrato mantido apenas como registro.",
+      "locacaoId": "3"
+    }
+  ],
+  "vistorias": [
+    {
+      "id": "1",
+      "tipo": "RETIRADA",
+      "data": "2026-11-19T09:00",
+      "km": 11200,
+      "nivelCombustivel": "CHEIO",
+      "observacoes": "Sem avarias; pneus calibrados e estepe ok.",
+      "locacaoId": "1"
+    },
+    {
+      "id": "2",
+      "tipo": "RETIRADA",
+      "data": "2026-11-01T10:00",
+      "km": 24000,
+      "nivelCombustivel": "CHEIO",
+      "observacoes": "Veículo entregue limpo e sem riscos.",
+      "locacaoId": "2"
+    },
+    {
+      "id": "3",
+      "tipo": "DEVOLUCAO",
+      "data": "2026-11-04T09:30",
+      "km": 24500,
+      "nivelCombustivel": "3/4",
+      "observacoes": "Inconsistência: pequeno arranhão superficial no para-choque traseiro direito.",
+      "locacaoId": "2"
+    },
+    {
+      "id": "4",
+      "tipo": "RETIRADA",
+      "data": "2026-11-10T08:00",
+      "km": 3200,
+      "nivelCombustivel": "CHEIO",
+      "observacoes": "Sem observações na retirada.",
+      "locacaoId": "3"
+    }
+  ],
+  "pagamentos": [
+    {
+      "id": "1",
+      "data": "2026-11-19T09:10",
+      "valor": 300,
+      "forma": "PIX",
+      "status": "PAGO",
+      "locacaoId": "1"
+    },
+    {
+      "id": "2",
+      "data": "2026-11-04T09:40",
+      "valor": 330,
+      "forma": "CARTAO_CREDITO",
+      "status": "PAGO",
+      "locacaoId": "2"
+    },
+    {
+      "id": "3",
+      "data": "2026-11-10T08:05",
+      "valor": 450,
+      "forma": "PIX",
+      "status": "ESTORNADO",
+      "locacaoId": "3"
+    }
+  ],
+  "notasFiscais": [
+    {
+      "id": "1",
+      "numero": "NF-000101",
+      "serie": "1",
+      "dataEmissao": "2026-11-04",
+      "valor": 330,
+      "locacaoId": "2"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
